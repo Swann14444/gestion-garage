@@ -1,0 +1,36 @@
+#box1
+{
+  display: flex;
+  border: 3px black solid;
+  width: 80%;
+  height: 20rem;
+  margin: auto;
+}
+
+.AdresseClient
+{
+  background-color: blue;
+  width: 40rem;
+  height: 18rem;
+  margin-right: 10rem;
+  padding: 1rem;
+}
+
+.VoitureClient
+{
+  background-color: red;
+  width: 40rem;
+  height: 18rem;
+  margin-left: 10rem;
+  padding: 1rem;
+}
+
+table
+{
+  border-collapse: collapse;
+}
+
+td,th
+{
+  border: 1px solid black;
+}
