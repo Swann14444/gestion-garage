@@ -1,17 +1,20 @@
-console.log("ejpaezi")
+var clients = {{ clients_as_json }}
 
 window.addEventListener("DOMContentLoaded", (event) => {
-    console.log("DOM entièrement chargé et analysé");
+
+    select_client = document.getElementById('sélection-client');
+    adresse = document.getElementById('adresse');
+
+    select_client.addEventListener('change', afficherAdresse);
+
+});
 
 
-    select_client = document.getElementById('sélection-client')
-    adresse = document.getElementById('adresse')
-
-    select_client.addEventListener('onchange',afficherAdresse(select_client, adresse ));
-
-  });
-
-
-function afficherAdresse(select_client, adresse ) {
-  adresse.innerHTML = select_client.value
+function afficherAdresse() {
+    console.log("changed");
+    for(var i = 0; i < clients.length; i++) {
+      if(clients[i].id == select_client.value) {
+          adresse.innerHTML = "{{ clients[i].city }}"
+      }
+    }
 }
