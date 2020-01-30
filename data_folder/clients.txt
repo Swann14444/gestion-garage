@@ -1,4 +1,3 @@
 Thomas;Jacques;Ferrari;Avenue Garibaldi;87000;Limoges
 Dupont;Tom;Fiat;rue du 15 mai;87000;Limoges
 Dupond;Hervé;Dacia;Rue Pierre Curie;87000;Limoges
-Servouze;Pierig;Renault;Boulevard Anatole France;90000;Belfort
