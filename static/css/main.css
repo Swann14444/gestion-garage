@@ -1,10 +1,15 @@
-#box1
+#infos-client
 {
   display: flex;
   border: 3px black solid;
   width: 80%;
   height: 20rem;
   margin: auto;
+}
+
+#détails-facture
+{
+  display: flex;
 }
 
 .AdresseClient
