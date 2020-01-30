@@ -17,13 +17,13 @@
     <h1>Gérer les factures</h1>
     <a href="/" title="Retour à l'accueil">Accueil</a>
 
-    <div id="box1">
+    <div id="infos-client">
         <div class="AdresseClient">
           <label for="client">Client : </label>
             <select name="sélection-client" id="sélection-client">
               <option value="new">Nouveau client</option>
               {% for client in clients %}
-                <option value={{ client.name }}>{{client.name }} {{ client.first_name }}</option>
+                <option value={{ client.id }}>{{client.name }} {{ client.first_name }}</option>
               {% endfor %}
             </select>
             <p id="adresse">
@@ -32,6 +32,14 @@
         <div class="VoitureClient">
           <p>Voiture du client</p>
         </div>
+    </div>
+
+
+    <div id="détails-facture">
+      <div class="item1">
+
+      </div>
+
     </div>
 
 
